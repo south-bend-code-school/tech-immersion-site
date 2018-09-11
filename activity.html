@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>South Bend Code School Classroom Tools</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <!-- SCRIPTS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+   <script src="index.js"></script>
+
+  </head>
+  <body>
+
+    <div class="fixed-action-btn top">
+      <a class="btn-floating btn-large orange">
+        <i class="large material-icons">menu</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating red" href="home.html"><i class="material-icons">home</i></a></li>
+        <li><a class="btn-floating green darken-1" id="signout"><i class="material-icons">exit_to_app</i></a></li>
+      </ul>
+    </div>
+
+
+    <div class="row">
+      <div class="col s12 center">
+        <img src="https://southbendcodeschool.com/images/sbcs_logo_color.png" width="25%">
+        <h1>Activities</h1>
+      </div>
+    </div>
+
+    <div class="containers">
+
+
+<ul class="collapsible">
+  <li>
+    <div class="collapsible-header">Unplugged Activities</div>
+    <div class="collapsible-body"><span></span>
+
+
+      <div class="row">
+
+        <div class="col s12 m3">
+        <a href="https://docs.google.com/presentation/d/16f8QSXTb8v0E--ZdJE3GFswNM409mcxyB-vd00Pqigc/edit?usp=sharing" target="_blank">
+          <div class="card-panel center">
+            <p>Hardware vs. Software</p>
+          </div>
+        </a>
+        </div>
+        <div class="col s12 m3">
+        <a href="computer.html">
+          <div class="card-panel center">
+            <p>Computer Look-Inside</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="col s12 m3">
+        <a href="https://south-bend-code-school.github.io/escape-room/index.html" target="_blank">
+          <div class="card-panel center">
+            <p>Escape Room</p>
+          </div>
+        </a>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </li>
+
+  <li>
+    <div class="collapsible-header">Review Games</div>
+    <div class="collapsible-body"><span></span>
+
+      <div class="row">
+
+        <div class="col s12 m3">
+        <a href="https://docs.google.com/presentation/d/13HryQDgThpHgJG72QrLdC4SXvw-9OXGD24Z6-r82Meg/edit?usp=sharing" target="_blank">
+          <div class="card-panel center">
+            <p>Wireframe Game</p>
+          </div>
+        </a>
+        </div>
+        <div class="col s12 m3">
+          <div class="card-panel center">
+            <p>HTML Puzzle</p>
+          </div>
+        </div>
+
+        <div class="col s12 m3">
+        <a href="https://github.com/south-bend-code-school/broken-code-exercise" target="_blank">
+          <div class="card-panel center">
+            <p>Fix the Broken Code</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="col s12 m3">
+        <a href="https://docs.google.com/document/d/1NUmOAm1nUOhTQouobu2oBgD_nY395BPwqVWxVqufkUE/edit?usp=sharing" target="_blank">
+          <div class="card-panel center">
+            <p>Hack-a-Site</p>
+          </div>
+        </a>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+        <div class="col s12 m3">
+        <a href="https://create.kahoot.it/details/code-school-wed-dev-review/c259487d-da4a-4f08-b3fb-149f6464d83f" target="_blank">
+          <div class="card-panel center">
+            <p>Kahoot: Web Dev Review</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="col s12 m3">
+        <a href="https://create.kahoot.it/details/computer-look-inside-review/03fde9b8-d31b-4d40-b871-bda43b3cc893" target="_blank">
+          <div class="card-panel center">
+            <p>Kahoot: Computer Look-Inside</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="col s12 m3">
+        <a href="https://create.kahoot.it/details/scratch-basics-1-15/7759d2f6-15e2-4636-b2f6-abf982c0ac7a" target="_blank">
+          <div class="card-panel center">
+            <p>Kahoot: Scratch 1</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="col s12 m3">
+        <a href="https://create.kahoot.it/details/scratch-introduction-quiz/cccdd4a5-fb75-4987-8e5e-951e3798bd87" target="_blank">
+          <div class="card-panel center">
+            <p>Kahoot: Scratch 2</p>
+          </div>
+        </a>
+        </div>
+
+
+      </div>
+
+
+      <div class="row">
+
+
+        <div class="col s12 m3">
+        <a href="https://create.kahoot.it/details/3be09d94-8944-41c6-b043-fdf78aa095cc" target="_blank">
+          <div class="card-panel center">
+            <p>Kahoot: Scratch 3</p>
+          </div>
+        </a>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+    </div>
+  </li>
+
+  <li>
+    <div class="collapsible-header">Coding Concepts</div>
+    <div class="collapsible-body"><span></span>
+
+      <div class="row center">
+
+        <div class="col s12 m3 offset-m3">
+        <a href="https://docs.google.com/presentation/d/1WV1woWRgvWGZJDf9N5w-7xbasl0yV_Cqter7zh-8seA/edit?usp=sharing" target="_blank">
+          <div class="card-panel center">
+            <p>PowerPoint</p>
+          </div>
+        </a>
+        </div>
+        <div class="col s12 m3">
+        <a href="https://docs.google.com/document/d/1tGWlCBSxWgYsOtGY7Ju_1Gk1KN061nTbqnlnhHtoQwo/edit?usp=sharing" target="_blank">
+          <div class="card-panel center">
+            <p>Activities</p>
+          </div>
+        </a>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </li>
+
+  <li>
+    <div class="collapsible-header">Drawing Prompts</div>
+    <div class="collapsible-body"><span></span>
+
+
+      <div class="row center">
+
+        <div class="col s12 m3 offset-m3">
+        <a href="https://docs.google.com/presentation/d/1shRHJh4wYhW9kZ6uKR1a-tqDGxHvmpWWmWabo4piMJI/edit#slide=id.g3e1f133dda_0_0" target="_blank">
+          <div class="card-panel center">
+            <p>Younger Students</p>
+          </div>
+        </a>
+        </div>
+        <div class="col s12 m3">
+        <a href="https://docs.google.com/presentation/d/1X6NypoG7RZwKLVgMdwqWxfuPV2h6tHCmX-zCAmf7Kj4/edit#slide=id.g3e8564d8ed_0_4" target="_blank">
+          <div class="card-panel center">
+            <p>Older Students</p>
+          </div>
+        </a>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </li>
+
+  <li>
+    <div class="collapsible-header">Exposure</div>
+    <div class="collapsible-body"><span></span>
+
+      <div class="row center">
+
+        <div class="col s12 m3">
+        <a href="https://docs.google.com/presentation/d/1Ft5CLhwn8e8e8T8YYgmO-d6ih02aipg7L8_z7N2LCgc/edit?usp=sharing" target="_blank">
+          <div class="card-panel center">
+            <p>Tech Companies</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="col s12 m3">
+          <a href="https://docs.google.com/presentation/d/16fp17nH3gyMNRkeV-qe51u90a7LeOoAs_tDmcKNC_sM/edit?usp=sharing" target="_blank">
+            <div class="card-panel center">
+              <p>Past Student Internships</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col s12 m3">
+          <a href="https://www.16personalities.com/" target="_blank">
+            <div class="card-panel center">
+              <p>16 personalities Career Test</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+  </li>
+
+  <li>
+    <div class="collapsible-header">Group Discussion</div>
+    <div class="collapsible-body"><span></span>
+
+
+      <div class="row center">
+
+        <div class="col s12 m3">
+        <a href="https://docs.google.com/presentation/d/17mXxQm_fMw5VJJM7MMNvPxT6V9p5qAcQXEj7vqebtw8/edit?usp=sharing" target="_blank">
+          <div class="card-panel center">
+            <p>Tech Careers</p>
+          </div>
+        </a>
+        </div>
+
+        <div class="col s12 m3">
+          <a href="" target="_blank">
+            <div class="card-panel center">
+              <p>Characteristics of a Coder</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col s12 m3">
+          <a href="" target="_blank">
+            <div class="card-panel center">
+              <p>How to Talk about your Code</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col s12 m3">
+          <a href="" target="_blank">
+            <div class="card-panel center">
+              <p>Legal + Ethical uses of Tech</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col s12 m3">
+          <a href="" target="_blank">
+            <div class="card-panel center">
+              <p>Positive and Negative Impacts of Tech on a person's Life, Society and Culture</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </li>
+
+
+  <li>
+    <div class="collapsible-header">Random</div>
+    <div class="collapsible-body"><span></span>
+
+      <div class="row">
+
+        <div class="col s12 m3">
+          <a href="https://create.kahoot.it/details/disney-movies-and-characters/9850d20b-0860-4a33-80b2-122d640658df" target="_blank">
+            <div class="card-panel center">
+              <p>Kahoot: Disney Fun</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col s12 m3">
+          <a href="./Tresure Island/index.html" target="_blank">
+            <div class="card-panel center">
+              <p>Tresure Island</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col s12 m3">
+          <a href="https://docs.google.com/presentation/d/1QQuRVm8TaFLzsrxwRoR43fw7-JIl244SCnbyX8os2no/edit?usp=sharing" target="_blank">
+            <div class="card-panel center">
+              <p>Studebaker History</p>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+
+
+</div>
+  </li>
+
+
+
+
+
+</ul>
+
+
+
+
+</div>
+
+
+</body>
+</html>

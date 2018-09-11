@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>South Bend Code School Classroom Tools</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="instructor.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="row wrapper">
+            <div class="fixed-action-btn top">
+                <a style="background-color:#6D0D8D" class="btn-floating btn-large orange">
+                    <i style="color: #FFFFFF; background-color:#6D0D8D" class="large material-icons">menu</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating red" href="home.html"><i class="material-icons">home</i></a></li>
+                    <li><a class="btn-floating green darken-1" id="signout"><i class="material-icons">exit_to_app</i></a></li>
+                </ul>
+            </div>
+        <div class="header">
+            <div class="title">
+                <h2>Instructor Tools</h2>
+            </div>
+            <div class="links">
+                <a href="https://airsoarer.github.io/Code-School/Tech%20Immersion%20Site/studentSide.html">Tech Immersion Site</a>
+                -
+                <a href="https://bit.ly/sbcs-scratch">Scratch Project Site</a>
+            </div>
+        </div>
+        <div class="col s12 m12 body">
+            <h4 class="p">Classroom Tools</h4>
+            <div class="col s12 m12 tools">
+                <div class="col s12 card tool">
+                    <a class="p" href="music.html"><h5>Music</h5></a>
+                    <p>Links to play music during class.</p>
+                </div>
+                <div class="col s12 card tool">
+                    <a class="p" href="activity.html"><h5>Activities</h5></a>
+                    <p>Break activities for students.</p>
+                </div>
+                <div class="col s12 card tool">
+                    <a href="manage.html" class="p"><h5>Classroom Managment</h5></a>
+                    <p>Tips to manage the students in class.</p>
+                </div>
+                <div class="col s12 card tool">
+                    <a href="" class="p"><h5>Code Copies</h5></a>
+                    <p>Code for all student projects if students need help.</p>
+                </div>
+                <div class="col s12 card tool">
+                    <a href="https://camisavines.github.io/survey/index.html" class="p"><h5>Student Surveys</h5></a>
+                    <p>Pre and Post Survey for all students.</p>
+                </div>
+                <div class="col s12 card tool" id="s">
+                    <a href="" class="p"><h5>Classroom Resources</h5></a>
+                    <p>Sign-Out Sheets, Door Signs, etc.</p>
+                    <br>
+                    <br>
+                    <div class="sLinks">
+                        <a class="p" href="https://docs.google.com/document/d/1O8zhg35RsehuRjWkJOTMkTR-hwPruOBZe0azHeZ9Pd8/edit?usp=sharing" target="_blank">Door Sign</a>
+                        <br>
+                        <a class="p" href="https://docs.google.com/document/d/1whkapTXbj-7-yGvU18lYj4QVRSD3LqkDrDEffkkW15A/edit?usp=sharing" target="_blank">Employee Only Sign</a>
+                    </div>
+                </div>
+                <div class="col s12 card tool">
+                    <a href="" class="p"><h5>Instructor Surveys</h5></a>
+                    <p>Survey to share your concerns.</p>
+                </div>
+                <div class="col s12 card tool">
+                    <a href="" class="p"><h5>Student Projects</h5></a>
+                    <p>South Bend Code School Student Page.</p>
+                </div>
+            </div>
+            <div class="col s12 faq">
+                <h2 class="p">Instructor FAQ</h2>
+                <div class="col s12 m12 card faqs">
+                    <h5 class="p">What should I do if a student dosen't want to participate?</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur ducimus nostrum consequuntur non qui ab dolorum voluptatum doloremque. Tempora cumque ducimus voluptates accusamus a qui deleniti quae corporis expedita?</p>
+                    <br>
+                    <h5 class="p">If a student is not picked up on time, what should I do?</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit pariatur doloribus cumque molestias in accusamus optio minus incidunt voluptatem soluta sapiente necessitatibus nemo, dolorum officia eaque eos debitis suscipit tempore?</p>
+                    <br>
+                    <h5 class="p">What if someone askes about how they can get a t-shirt?</h5>
+                    <p>You can tell them that they can purchase one for $10 and all the proceeds will go toward the scholarship fund</p>
+                    <br>
+                    <h5 class="p">How should I handle bathroom breaks</h5>
+                    <p>With younger students, if one student has to go to the bathroom, ask the entire class if anyone else needs to use the bathroom, and you will woalk down together. With older students, just make sure they let an instructor know where they are going. No need to walk with them</p>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <img style="margin-left: 5px;" src="https://southbendcodeschool.com/images/sbcs_logo_color.png" >
+        </div>
+    </div>
+</body>
+</html>

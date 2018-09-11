@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Code School Project Site</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+   <!-- SCRIPTS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+   <script src="index.js"></script>
+   <script src="./rainbow.js"></script>
+  </head>
+
+  <body>
+
+    <div class="section orange">
+      <div class="row container">
+        <div class="col s12 center">
+          <h1>Rainbow Button</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="block grey lighten-4">
+      <div class="row container">
+        <div class="col s12 m6">
+          <h3>The Setup</h3>
+          <ol>
+            <li>Create your HTML and JavaScript pages.</li>
+            <li>Set up your HTML page</li>
+              <ol type="a">
+                <li>Link you JavaScript page</li>
+                <li>Insert jquery cdn</li>
+                <li>Put a button in the center of the screen</li>
+                <li>Make sure your button has either a class or id.</li>
+              </ol>
+            <li>Start coding in JavaScript</li>
+          </ol>
+        </div>
+        <div class="col s12 m6 center" style="padding-top: 20px; padding-bottom: 20px;">
+          <button id="rainbow"><strong><h3>Click Me!</h3></strong></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section white">
+      <div class="container row">
+        <div class="col s12">
+          <h3>The JavaScript</h3>
+            <ol type="a">
+              <li>start with your wrapper function.</li>
+                <ol type="i">
+                  <li>The purpose of our wrapper function is to keep all of our code together</li>
+                </ol>
+
+                <pre>
+                  <code style="color: red;">
+            (function() {
+
+            })();
+                  </code>
+                </pre>
+
+              <li>Now add the document ready statement</li>
+                <ol type="i">
+                  <li>This tells the computer to <em>wait</em> until our <b><u>document</u></b> is <b><u>ready</u></b> before it starts reading the JavaScript page.</li>
+                </ol>
+
+                <pre>
+                  <code>
+            (function() {
+
+              <span style="color: red;">$(document).ready(init);</span>
+
+            })();
+                  </code>
+                </pre>
+
+              <li>The next step is tell the computer what to do <b><u>when</u></b> the button is <u><b>clicked</u></b></li>
+
+                  <pre>
+                    <code>
+            (function() {
+
+              $(document).ready(init);
+
+              <span style="color: red;">function init() {
+                $("#button").click(red);
+              }</span>
+
+            })();
+                    </code>
+                  </pre>
+
+                <ol type="i">
+                  <li>This line of code says, "when the <b>id</b> of button is clicked, run the <b>function</b> red."</li>
+                </ol>
+              <li>Next, in the function red, we actually want to change the color of the text to red.</li>
+                <ol type="i">
+                  <li>This line says that the id, button, will change its css color to red.</li>
+                  <li>Then, the we want to say, "If the id&mdash;button is clicked again, then the run the function <b>orange</b>"</li>
+                </ol>
+
+              <pre>
+                <code>
+          (function() {
+
+            $(document).ready(init);
+
+            function init() {
+              $("#button").click(red);
+            }
+
+            <span style="color: red;">function red() {
+              $('#button').css('background-color', 'red');
+              <span style="color: blue;">$('#button').click(orange);</span>
+            }</span>
+
+          })();
+                </code>
+              </pre>
+
+              <li>After the button is clicked again the color will change to orange.</li>
+            </ol>
+
+            <h4 class="center">Use what you've learned to add the rest of the rainbow to your button.</h4>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>

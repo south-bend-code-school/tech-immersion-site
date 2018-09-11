@@ -1,0 +1,59 @@
+body{
+    background-color: #eeeeee;
+}
+
+h2{
+    margin-top: 0px !important;
+}
+
+#s{
+    position: relative;
+}
+
+.sLink{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.header{
+    background-image: linear-gradient(to right, #6D0D8D, #A20BAA);
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+.title{
+    padding-top: 40px;
+}
+
+.links a{
+    color: white;
+    font-size: 20px;
+    border-bottom: solid white 2px;
+}
+
+.p{
+    color: #6D0D8D;
+}
+
+.tool{
+    height: 200px;  
+    width: 24% !important;
+    margin-right: 1% !important;
+    border-radius: 5px !important;
+}
+
+.faqs{
+    padding: 20px !important;
+}
+
+.faq{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.img img{
+    width: 250px;
+    height: 50px;
+}

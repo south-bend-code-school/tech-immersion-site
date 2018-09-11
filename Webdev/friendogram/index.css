@@ -1,0 +1,40 @@
+.image {
+  height: 100px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+     filter: grayscale(100%);
+  transition: 2s;
+}
+
+.image:hover {
+  background-size: 150%;
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+#friend1 {
+  background-image: url('https://bloximages.newyork1.vip.townnews.com/southbendtribune.com/content/tncms/assets/v3/editorial/6/09/609a30bf-061e-535a-ba05-ca59ae11a9f1/5b5237c48f2ce.image.jpg?resize=1200%2C833');
+}
+
+#friend2 {
+  background-image: url('https://pbs.twimg.com/media/Dcg57OeXcAAHPkG.jpg');
+}
+
+#friend3 {
+  background-image: url('https://admissions.nd.edu/assets/275918/300x/alex2.png');
+}
+
+#friend4 {
+  background-image: url('https://static1.squarespace.com/static/57b7bbcc1b631bd959b34d48/t/5a86e8334192028861438b7a/1518790711308/1_Fxq7-drYG21WKPJ-Gi1mIA.jpeg');
+}
+
+#friend5 {
+  background-image: url('https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=dCN5D51z%2BL9qJDLpon3P9Iez6WA%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWjsLMGMf7ag8EBEKS5SjQA6Lei1SDLoR46-KojrfIpygpDhJ8T5aRUPbhU4hGUB5sE-Pg');
+}
+
+#friend6 {
+  background-image: url('https://siteselection.com/cc/indiana/2017/images/CodeSchool2.jpg');
+}

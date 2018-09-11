@@ -1,0 +1,201 @@
+#hovertransition {
+    color: black;
+    background-color: orange;
+    width: 50%;
+    height: 25%;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    border: 10px solid black;
+    transition: 2s;
+}
+  
+#hovertransition:hover {
+    color: orange;
+    background-color: black;
+    width: 75%;
+    height: 25%;
+    padding-top: 75px !important;
+    padding-bottom: 75px !important;
+    border: 20px dotted white;
+}
+  
+#rainbow {
+    background-color: grey;
+    color: black;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    border-radius: 30px;
+    width: 50%;
+}
+
+.wrapper{
+    margin-top: 0px;
+}
+
+.top{
+    background-image: linear-gradient(to right, #F7621E, #F7931E);
+    color: white;
+    padding-top: .1px;
+    padding-bottom: 120px;
+}
+
+.contain{
+    width: 60%;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lesson{
+    /* background-color: blue; */
+    border-left: 10px #0068FF solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 105%;
+    margin-left: -15px !important;
+    height: 320px;
+}
+
+.python{
+    border-left: 10px #0068FF solid;
+    height: 400px;
+}
+
+.javascript{
+    border-left: 10px #0068ff solid;
+}
+
+.unity{
+    border-left: 10px #0068FF solid;
+    height: 400px;
+}
+
+.content{
+    margin-left: 10px;
+}
+
+.content img{
+    height: 100px;
+}
+
+.contentBtn{
+    padding: 10px;
+    font-size: 18px;
+    background-image: linear-gradient(to right, #0068FF, #00BCFF);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 80px;
+}
+
+.need, .learn{
+    margin-top: -15px;
+    margin-left: 0px !important;
+}
+
+.need h6{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.learn h6{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.learn ul li{
+    color: #0068FF;
+    /* font-weight: 600; */
+}
+
+.pyLearn ul li{
+    color: #0068FF;
+    /* font-weight: 800; */
+}
+
+.uLearn ul li{
+    color: #0068FF;
+}
+
+.collapsibletitles{
+    color: #0068FF;
+}
+
+.photoDiv{
+    height: 320px;
+    margin-top: -10px;
+}
+
+.photoDiv img{
+    height: 100% !important;
+}
+
+.infoDiv{
+    height: 320px;
+    margin-top: -10px;
+    position: relative;
+}
+
+.bottomBtn{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 0px !important;
+}
+
+.bottomBtn a{
+    padding: 10px;
+    font-size: 18px;
+    background-image: linear-gradient(to right, #0068FF, #00BCFF);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 80px;
+}
+
+.pyBtn{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 0px !important;
+}
+
+.pyBtn a{
+    padding: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 80px;
+    background-color: #0068FF !important;
+}
+.javascriptBtn{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 0px !important;
+}
+
+.javascriptBtn a{
+    padding: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 80px;
+    background-image: linear-gradient(to righT, #0068FF, #00BCFF)
+}
+
+.unityBtn{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 0px !important;
+}
+
+.unityBtn a{
+    padding: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 80px;
+    background-color: #0068FF !important;
+}
+
+.photoDiv a{
+    margin-top: 35%;
+}
