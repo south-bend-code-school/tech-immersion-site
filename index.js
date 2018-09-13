@@ -2,15 +2,15 @@
 
   $(document).ready(init)
 
-  // Initialize Firebase
- var config = {
-   apiKey: "AIzaSyCWhIhyFcWw60fmrOJWyy89A_s4YeGeU_c",
-   authDomain: "instructor-portal.firebaseapp.com",
-   databaseURL: "https://instructor-portal.firebaseio.com",
-   projectId: "instructor-portal",
-   storageBucket: "instructor-portal.appspot.com",
-   messagingSenderId: "337391615201"
- };
+//   // Initialize Firebase
+//  var config = {
+//    apiKey: "AIzaSyCWhIhyFcWw60fmrOJWyy89A_s4YeGeU_c",
+//    authDomain: "instructor-portal.firebaseapp.com",
+//    databaseURL: "https://instructor-portal.firebaseio.com",
+//    projectId: "instructor-portal",
+//    storageBucket: "instructor-portal.appspot.com",
+//    messagingSenderId: "337391615201"
+//  };
 
 
   function init() {
