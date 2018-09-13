@@ -76,7 +76,7 @@ function homePage() {
   console.log('you are on the homePage');
   firebase.auth().onAuthStateChanged(firebaseUser => {
       if(firebaseUser){
-          // window.location = 'home.html'
+          window.location = 'home.html'
       }else{
           window.location = 'index.html'
       }
@@ -88,11 +88,11 @@ function homePage() {
 
 function signOut() {
   firebase.auth().signOut().then(function() {
-    // Sign-out successful.
-    // alert('Successful Signout');
+    Sign-out successful.
+    alert('Successful Signout');
     window.location.replace('index.html');
   }).catch(function(error) {
-    // An error happened.
+    An error happened.
     alert('An error happened.');
   });
 
