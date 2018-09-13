@@ -19,82 +19,82 @@
     $('.collapsible').collapsible();
     $('.fixed-action-btn').floatingActionButton();
 
-    $('#login').click(login);
-    $('#signout').click(signOut);
-    var title = $('title').text();
+//     $('#login').click(login);
+//     $('#signout').click(signOut);
+//     var title = $('title').text();
 
-    console.log(title);
+//     console.log(title);
 
 
-    if (title !== "South Bend Code School Insctrutor Portal") {
-      homePage();
-    } else {
-      console.log('here');
-    }
+//     if (title !== "South Bend Code School Insctrutor Portal") {
+//       homePage();
+//     } else {
+//       console.log('here');
+//     }
 
 
   }
 
-  function login() {
-  var email = $('#email').val();
-  var password = $('#password').val();
+//   function login() {
+//   var email = $('#email').val();
+//   var password = $('#password').val();
 
-  firebase.auth().signInWithEmailAndPassword(email, password)
-    .then(function() {
-      var thisUser = {
-        email: email,
-        password: password,
-      }
-      var user = firebase.auth().currentUser;
+//   firebase.auth().signInWithEmailAndPassword(email, password)
+//     .then(function() {
+//       var thisUser = {
+//         email: email,
+//         password: password,
+//       }
+//       var user = firebase.auth().currentUser;
 
-        console.log(user);
+//         console.log(user);
 
-        if (thisUser.email == user.email) {
-          // alert('it worked');
-          window.location.replace('instructor.html');
-        } else {
-          alert('nope');
-        }
+//         if (thisUser.email == user.email) {
+//           // alert('it worked');
+//           window.location.replace('instructor.html');
+//         } else {
+//           alert('nope');
+//         }
 
-    })
-    .catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // ...
-        alert(errorMessage);
+//     })
+//     .catch(function(error) {
+//         // Handle Errors here.
+//         var errorCode = error.code;
+//         var errorMessage = error.message;
+//         // ...
+//         alert(errorMessage);
 
-      });
-
-
-}
+//       });
 
 
-
-
-function homePage() {
-  console.log('you are on the homePage');
-  firebase.auth().onAuthStateChanged(firebaseUser => {
-      if(firebaseUser){
-          // window.location = 'home.html'
-      }else{
-          window.location = 'index.html'
-      }
-  });
-}
+// }
 
 
 
 
-function signOut() {
-  firebase.auth().signOut().then(function() {
-    // Sign-out successful.
-    // alert('Successful Signout');
-    window.location.replace('index.html');
-  }).catch(function(error) {
-    // An error happened.
-    alert('An error happened.');
-  });
+// function homePage() {
+//   console.log('you are on the homePage');
+//   firebase.auth().onAuthStateChanged(firebaseUser => {
+//       if(firebaseUser){
+//           // window.location = 'home.html'
+//       }else{
+//           window.location = 'index.html'
+//       }
+//   });
+// }
+
+
+
+
+// function signOut() {
+//   firebase.auth().signOut().then(function() {
+//     // Sign-out successful.
+//     // alert('Successful Signout');
+//     window.location.replace('index.html');
+//   }).catch(function(error) {
+//     // An error happened.
+//     alert('An error happened.');
+//   });
 
 }
 
